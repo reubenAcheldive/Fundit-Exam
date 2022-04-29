@@ -23,15 +23,18 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/match", (req, res) => {
-  const page = req.query.page || 1;
+  const { page = 1, limit = 12 } = req.query;
+  const { startIndex, endIndex } = paginated(Number(page), Number(limit));
 
-  const paginatedData = tempData.slice(
-    (Number(page) - 1) * PAGE_SIZE,
-    Number(page) * PAGE_SIZE
-  );
+  const paginatedData = tempData.slice(startIndex, endIndex);
 
   res.send(paginatedData);
 });
 
 app.listen(PORT);
 console.log("server running", PORT);
+function paginated(page: number, limit: number) {
+  const startIndex = (Number(page) - 1) * Number(limit);
+  const endIndex = Number(page) * Number(limit);
+  return { startIndex, endIndex };
+}
