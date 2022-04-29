@@ -26,16 +26,7 @@ export type Match = {
   labels?: string[];
 };
 
-export type ApiClient = {
-  getMatches: () => Promise<Match[]>;
-};
-
-export const createApiClient = (): ApiClient => {
-  return {
-    getMatches: () => {
-      return axios
-        .get(`http://localhost:8888/api/match`)
-        .then((res) => res.data);
-    },
-  };
+export const createApiClient = async (): Promise<Match[]> => {
+  const { data } = await axios.get<Match[]>(`http://localhost:8888/api/match`);
+  return data;
 };

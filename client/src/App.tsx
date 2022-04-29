@@ -15,7 +15,7 @@ const App = () => {
   const [matches, setMatches] = React.useState<Match[]>([]);
   React.useEffect(() => {
     async function fetchMatches() {
-      setMatches(await api.getMatches());
+      setMatches(await api);
     }
     fetchMatches();
   }, []);
