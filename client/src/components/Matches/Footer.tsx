@@ -7,9 +7,9 @@ export const Footer: React.FC<{ creationTime: number }> = ({
   return (
     <footer>
       <div className="meta-data">
-        Created At {splitDateAndTime(creationTime, 0)}
+        Created on {splitDateAndTime(creationTime, 0)}
         <br />
-        On {splitDateAndTime(creationTime, 1)}
+        At {splitDateAndTime(creationTime, 1)}
       </div>
     </footer>
   );

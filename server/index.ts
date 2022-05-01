@@ -1,13 +1,16 @@
 import express from "express";
 
-import bodyParser = require("body-parser");
 import { tempData } from "./temp-data";
 
 const app = express();
 
 const PORT = 8888;
 
-const PAGE_SIZE = 5;
+function paginated(page: number, limit: number) {
+  const startIndex = (Number(page) - 1) * Number(limit);
+  const endIndex = Number(page) * Number(limit);
+  return { startIndex, endIndex };
+}
 
 app.use(express.json());
 
@@ -18,8 +21,8 @@ app.use((_, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("dev api status - up");
+app.get("/api/match/search", (req, res) => {
+  const { key = "" } = req.query;
 });
 
 app.get("/api/match", (req, res) => {
@@ -37,8 +40,3 @@ app.get("/api/match", (req, res) => {
 
 app.listen(PORT);
 console.log("server running", PORT);
-function paginated(page: number, limit: number) {
-  const startIndex = (Number(page) - 1) * Number(limit);
-  const endIndex = Number(page) * Number(limit);
-  return { startIndex, endIndex };
-}

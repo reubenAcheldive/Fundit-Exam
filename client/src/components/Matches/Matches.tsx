@@ -31,8 +31,6 @@ export const Matches = ({
 
   return (
     <Row className="matches">
-      <PaginationMatches paginated={paginated}  />
-
       <span>
         {" "}
         <Button onClick={() => setSort((prev) => !prev)}>Sort</Button>
@@ -61,12 +59,12 @@ export const Matches = ({
                   </p>
                 </div>
               </div>
-              <span className="userDate">
+              <p className="userDate">
                 <b> Label: </b>
                 {labels?.map((l, i) => (
-                  <p key={i}>{l.split(",")[i]}</p>
+                  <span key={i}>{l.split(' ')[i]}</span>
                 ))}
-              </span>
+              </p>
               <Footer creationTime={creationTime} />
             </li>
           </Col>
