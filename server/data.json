@@ -22,7 +22,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Closed"]
+    "labels": [
+      "Closed"
+    ]
   },
   {
     "id": "ca5858ee-74ea-4095-98f8-456ec6f7b9d9",
@@ -47,7 +49,10 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Possible", "Open"]
+    "labels": [
+      "Possible",
+      "Open"
+    ]
   },
   {
     "id": "31406362-c6ba-4c73-a5f3-c080dc8c9df8",
@@ -72,7 +77,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Decline"]
+    "labels": [
+      "Decline"
+    ]
   },
   {
     "id": "0671ad35-647e-4237-bb16-064aa9e9c41b",
@@ -97,7 +104,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Close"]
+    "labels": [
+      "Close"
+    ]
   },
   {
     "id": "9a114712-7405-4079-94a6-64dc34007771",
@@ -122,7 +131,10 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Possible", "Open"]
+    "labels": [
+      "Possible",
+      "Open"
+    ]
   },
   {
     "id": "c5ddeeb3-48e9-448f-9cec-a1034f46896d",
@@ -147,7 +159,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Decline"]
+    "labels": [
+      "Decline"
+    ]
   },
   {
     "id": "0120c1ec-dbc7-450b-ae6c-46015493eca4",
@@ -172,7 +186,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Close"]
+    "labels": [
+      "Close"
+    ]
   },
   {
     "id": "71c341e4-5ed5-4732-80ff-078f527ae1b2",
@@ -197,7 +213,10 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Possible", "Open"]
+    "labels": [
+      "Possible",
+      "Open"
+    ]
   },
   {
     "id": "6f5f43cd-9dce-44bb-983e-924fccaa4533",
@@ -222,7 +241,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Decline"]
+    "labels": [
+      "Decline"
+    ]
   },
   {
     "id": "c8416823-4db4-420e-8e4b-909d7d8207f8",
@@ -247,7 +268,9 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Close"]
+    "labels": [
+      "Close"
+    ]
   },
   {
     "id": "2c89c62f-0f9e-4d73-8c0e-9ea9556e4986",
@@ -272,7 +295,10 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Possible", "Open"]
+    "labels": [
+      "Possible",
+      "Open"
+    ]
   },
   {
     "id": "70998115-8f48-49bf-a6ad-81d8b6b07ce4",
@@ -297,6 +323,8 @@
         "userIp": "12.12.12.12"
       }
     },
-    "labels": ["Decline"]
+    "labels": [
+      "Decline"
+    ]
   }
 ]

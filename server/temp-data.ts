@@ -1,6 +1,5 @@
-// import { Ticket } from "@ans-exam/client/src/api";
-
-
+// import { Ticket } from "../client/src/api";
+import fs from "fs";
 
 const data = require("./data.json");
 

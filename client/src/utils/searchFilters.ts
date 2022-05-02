@@ -1,4 +1,5 @@
-import { Match, PaginatedData } from "../api";
+import { PaginatedData } from "../api.modals";
+
 
 function convertToLowerCase(str: string): string {
   return str.toLowerCase();

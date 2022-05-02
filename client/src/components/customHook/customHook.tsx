@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { createApiClient, PaginatedData } from "../../api";
+import { createApiClient } from "../../api";
+import { PaginatedData } from "../../api.modals";
 
 export const useFetch = () => {
   const [page, setPage] = useState(1);

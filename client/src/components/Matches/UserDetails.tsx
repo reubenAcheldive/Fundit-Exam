@@ -1,5 +1,5 @@
 import React from "react";
-import { Match, PaginatedData } from "../../api";
+import { PaginatedData } from "../../api.modals";
 
 export const UserDetails: React.FC<Partial<PaginatedData>> = ({ borrower }) => {
   return (
